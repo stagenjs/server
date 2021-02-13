@@ -502,12 +502,12 @@
         "affectsGlobalScope": false
       },
       "../package.json": {
-        "version": "79cebdef8ffa6c28c57bca9e78ac589b3dc7fe335a2f4544f864da5d881393df",
-        "signature": "61a13159f42d769a1d9235bab32d969bce14aa9f8d2387d4bbc99cb274d5fd5a",
+        "version": "056233bc405dd9da1eb2070d96acff35e4acbbd5f10c0508a10a815554f3f9fa",
+        "signature": "2083e1c4d5a78bb45a74ec9c7bf6ed23bbaf6c8a86464c78705fca7e5383ae6f",
         "affectsGlobalScope": true
       },
       "../src/Server.ts": {
-        "version": "26528580a99cb94416baa18badb1929e1ecc4bd18319d5be27f1db973d1a82f2",
+        "version": "9a5b7f4c9b0ca3676edd1e54fe6771580804f88bf2e13283d10e2dd5f1a788ce",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       }
