@@ -33,6 +33,7 @@ program.name('stagen');
 program.version(version, '-v, --version');
 
 program.option('-c <config>', 'Path to the JSON config file. Defaults to <cwd>/stagen.json');
+program.option('-d <directory>', 'Path to the root directory to serve. Defaults to <cwd>');
 program.option('-h <host>', 'Binding interface. Defaults to 127.0.0.1');
 program.option('-p <port>', 'Binding port. Defaults to 3000.');
 program.parse(process.argv);
@@ -65,8 +66,14 @@ if (!config.port && config.port !== 0) {
     config.port = 3000;
 }
 
+let serveDirectory: string = Path.resolve(process.cwd());
+
+if (options.d) {
+    serveDirectory = Path.resolve(process.cwd(), options.d);
+}
+
 const app: Express.Express = Express();
-app.use(Express.static(process.cwd()));
+app.use(Express.static(serveDirectory));
 
 app.put('/_stagen/publish', (request: Express.Request, response: Express.Response) => {
     if (!config.secret || config.secret !== request.headers['x-secret']) {
