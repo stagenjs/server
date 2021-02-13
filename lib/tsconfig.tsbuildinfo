@@ -507,8 +507,8 @@
         "affectsGlobalScope": true
       },
       "../src/Server.ts": {
-        "version": "9a5b7f4c9b0ca3676edd1e54fe6771580804f88bf2e13283d10e2dd5f1a788ce",
-        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "version": "7f93bb7b6b9675029c4fc76b1ffad82d1bfd869b42904442edfa0c7e5045d4b1",
+        "signature": "d95d560e3b6e989ebcabbb7c2d50847135add285ec66cdee71cfaf2ef6ef038b",
         "affectsGlobalScope": false
       }
     },
