@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Stagen server",
   "main": "lib/index.js",
+  "bin": {
+    "stagen-server": "./lib/src/Server.js"
+  },
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
